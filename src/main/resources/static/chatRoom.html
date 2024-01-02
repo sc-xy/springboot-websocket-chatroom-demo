@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>聊天室</title>
+    <link rel="stylesheet" href="css/chatRoom.css">
+</head>
+
+<body>
+    <div class="container" id="username-container">
+        <form class="username-form" id="username-form">
+            <div class="input-box">
+                <input type="text" placeholder="输入用户名" id="username" autocomplete="off" maxlength="100">
+                <button type="submit">登录</button>
+            </div>
+        </form>
+    </div>
+    <div class="container hidden" id="chat-container">
+        <div class="chat-list">
+            <h1>chat list</h1>
+            <ul id="chat-list-ul" style="overflow-y: scroll; height: 390px;">
+                <li>
+                    <div class="chat-item active" data-chat="public">
+                        <span>public chat room</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="chat-room" id="public-chat">
+            <h1>public chat room</h1>
+            <div class="chat-content" id="public-content">
+            </div>
+            <form id="public-chat-send">
+                <div class="input-box">
+                    <input type="hidden" value="public" id="public-receiver">
+                    <input type="text" placeholder="输入消息" id="public-chat-message" autocomplete="off" maxlength="100">
+                    <button type="submit">发送</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sockjs-client/1.1.4/sockjs.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/stomp.js/2.3.3/stomp.min.js"></script>
+<script src="js/chatRoom.js"></script>
+
+</html>
