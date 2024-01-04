@@ -30,4 +30,4 @@ http://localhost:8080/chatRoom.html
 ```
 
 ## 项目演示
-http://chat.sc-xy.top/chatRoom.html
+http://chatDemo.sc-xy.top/chatRoom.html
