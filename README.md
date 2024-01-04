@@ -28,3 +28,6 @@ mvn spring-boot:run
 ```shell
 http://localhost:8080/chatRoom.html
 ```
+
+## 项目演示
+http://chat.sc-xy.top/chatRoom.html
